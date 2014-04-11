@@ -3,7 +3,7 @@ require 'minitest/unit'
 require 'test_friends/tempfile'
 require 'yapit'
 
-class TestYapit < Minitest::Unit::TestCase
+class TestYapit < MiniTest::Unit::TestCase
   def setup
     @file = TestFriends::Tempfile.new :extname => '.yaml'
     create_sample_yaml_file @file
