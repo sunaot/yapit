@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Yapit::VERSION
   spec.authors       = ["sunaot"]
   spec.email         = ["sunao.tanabe@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Yet another simple Pit library.}
+  spec.summary       = %q{Yet another simple Pit library which does not use pit.yaml file to switch context. Have no backward API compatibility to original cho45/pit interfaces.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

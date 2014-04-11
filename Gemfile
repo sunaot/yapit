@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in yapit.gemspec
+gem 'test_friends', :git => 'git@github.com:sunaot/test_friends.git', :group => [:development, :test]
 gemspec

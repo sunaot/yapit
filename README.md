@@ -1,24 +1,27 @@
 # Yapit
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/sunaot/yapit.png?branch=master)](https://travis-ci.org/sunaot/yapit)
+
+Yet another simple Pit library.
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'yapit'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install yapit
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'yapit'
+
+Yapit.configure do |c|
+  c.root = '/path/to/pit/directory' # ~/.pit for default
+  c.default_profile = 'twitter'     # 'default' for default
+end
+
+yapit = Yapit.new('profile_name')   # or use default_profile
+auth = yapit.get('twitter.com')
+puts auth['id'], auth['id']
+```
 
 ## Contributing
 
