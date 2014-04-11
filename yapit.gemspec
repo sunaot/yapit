@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
   spec.email         = ["sunao.tanabe@gmail.com"]
   spec.description   = %q{Yet another simple Pit library.}
   spec.summary       = %q{Yet another simple Pit library which does not use pit.yaml file to switch context. Have no backward API compatibility to original cho45/pit interfaces.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/sunaot/yapit"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.test_files    = spec.files.grep(%r{^test/})
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.3"
